@@ -1,0 +1,1336 @@
+Archimedes Cheat Manual
+
+Compiled by Dave Lodge
+Release: 1.05 Text/DoggySoft
+
+This document has been compiled by me (Dave Lodge) to act as a full
+compilation of all Archimedes cheats/bugs/pokes/passwords etc. I hope 
+to keep it as up to date as possible, this is limited by time and money. 
+Any contributions will be gratefully accepted. The latest version of this 
+document can always be received by sending me a disc and return postage (I
+am only a student) to the below address. A text only version is available
+through email. This version was done on Zap. [And was then altered by AjC
+to make the tabs readable on other text editors.]
+
+I make no guarantee to the correctness of any cheats/bugs/pokes/passwords
+etc contained in this document, most have been taken out of magazines or
+the programs themselves. If you have any cheats not included in this
+document I would be very grateful if you could send them to me ;) If you
+include a disc I will send you the latest version of this manual. Or if you
+can tell me how to get some of the mentioned cheats working, where I can't
+get a cheat to work I have indicated it. I haven't been able to check all
+cheats (I don't have all the games!)
+
+I will not accept Games Wizard codes for pokes - just send me the poke...
+
+I would like to thank all the people who have contributed to this 
+document, by sending cheats into magazines or to BBSs: Ian Jeffray, The Fox,
+Adam Case, James Hunter, The Hac-man, The Hac-man (part II) the ppl
+responsible for the Archimedes World cheat page, the ppl responsible for the
+Acorn User cheat page (I can't remember their names) and anyone else who I
+have gained a cheat off, especially the game authors who in their wisdom
+have included cheat modes and easy-to-hack-out-passwords... I would like to
+give a special thanks to DoggySoft, who have made life a lot easier with
+their excellent Hacker program...
+
+Contacts:
+
+[REDACTED]
+
+On Monochrome:          dave
+
+Okay? The term address is only relevant during university term time, ie 
+from about 2nd week in October to about the first week in June, 
+excluding bits for Chrimbo & Easter. Do not use it before/after these 
+times, because if you ever received the letter back it will probably be 
+very late. In case of doubt use Home address - it will eventually reach 
+me...
+
+Please note that this document is Shareware ie you can copy it but if you 
+want the current version you must 'buy' it from me - the price is 1 disc, ie
+send 2 discs to me and I will return 1 of the discs with the current ACM on
+it.
+
+This edition of the ACM has been produced in conjunction with 
+DoggySoft especially to be given away with their excellent product ('The 
+Hacker') For this version I would like to thank Andrew Clover for the cheats
+which he has given me...
+
+This is a Riscy Developments/Doggysoft production
+
+-----------------------------------------------------------------------------
+
+Contents
+Aggressor               Cheat mode
+Air Supremacy           Passwords
+Alerion                 Cheat mode, infinite lives
+Apocalypse              Cheat mode
+Axis                    Passwords
+Ballerena               Passwords
+Bambuzzle               Passwords
+Blitz                   Lives, score,passwords
+Blowpipe                Cheat modes
+Break 147               Cheat modes
+Bughunter               Passwords
+Bughunter in Space      Passwords
+Chuck Rock              Cheat modes
+Cycloids                Level Jump
+DropShip                Passwords
+E-Type                  Bugs, cheat modes
+Enter the Realm         Cheat mode, bug
+Fervour                 Passwords (beginner)
+Fred                    Passwords
+Galactic Dan            Passwords
+GODS                    Lives, score, credits, energy
+Grievous Bodily 'Arm    Cheat mode
+Guile                   Passwords
+Hostages                Cheat mode
+HoverBod                Cheat modes
+James Pond              Score, Cheat mode
+Kaptain Konflict        Passwords
+Lemmings                Passwords, Cheat mode
+The Last Ninja          Cheat mode, pokes
+The Lost Temple         Cheat mode
+Lotus Turbo 2           Passwords
+Mad Professor Mariati   Infinite lives
+Man At Arms             Passwords
+Minotaur                Various pokes
+MoonDash                Passwords
+Nebulus                 Pokes
+Nevryon                 Passwords, bug
+Oh No! More Lemmings    Passwords, Cheat mode
+Orion                   Cheat mode
+Overload                Passwords
+Paradroid               Cheat mode      
+Pipemania               Passwords
+Powerband               Cheat modes
+Pysanki                 Pokes
+Quazer                  Passwords
+RedShift                Cheat mode
+Repton 3                Passwords
+Repton 4 - Ego          Passwords, Cheat mode
+Rockfall                Passwords
+Rotor                   Passwords
+Saloon Cars             Cheat mode
+Spheres of Chaos        Cheat mode
+Square Route            Passwords
+Super Pool              Cheat modes
+SWIV                    Cheat mode
+Technodream             Passwords, Cheat mode
+Terramex                Cheat mode
+ThunderMonk             Passwords
+Top Banana              Infinite lives
+Zarch                   Cheat mode
+Zool                    Cheat mode, Credits
+2067BC                  Passwords
+
+-----------------------------------------------------------------------------
+
+A
+
+Aggressor
+Cheat mode      - Enter your name on the high score table as 'CLASSIFIED'
+Your name will appear as 'WRONG...' Next game you will have 15 lives and
+all power-ups from the start.
+
+Air Supremacy
+Passwords:      1918    n/a
+                1944    SCRAMBLE
+                1991    STACCATO
+                2150    EQUANIMITY
+
+Alerion
+Cheat mode      - When the High Score table is shown press any key from 'A'
+to 'O' to start on that level.
+Infinite Lives  - ?&2749C = 0
+
+Apocalypse
+Cheat mode      - During the game type in 'ELIZA' to go to the next level.
+
+Axis
+Passwords:      1       HotWetSoap
+                2       yFishTankW
+                3       ankelRotar
+                4       yEngineVib
+                5       raphoneKin
+                6       gSolomonsM                
+                7       inesTheArc
+                8       hitectSket
+
+B
+
+Ballarena
+Passwords:      1       PUNKANDJUMP
+                2       MONTPELLIER
+                3       SEA SEX SUN
+                4       VL 86 C 010
+                5       MOUNTAINEERS
+                6       GRENOUILLE
+                7       BLUBEDILOMAR
+                8       BRAIN KILLER
+                9       RHYTHM BOX
+                10      BOUBOULOID
+                11      MENFOU
+                12      32 BIT POWER
+                13      MARTINI
+                14      SEE YOU SOON
+                15      ETERNA
+
+Blitz
+Lives           - !&29634 = <# of lives>
+Score           - !&29A0C = <score>
+Passwords:      1       n/a
+                2       SIERRA
+                3       MOUSE
+                4       HERBERT
+                5       COMPACT
+                6       FERRARI
+                7       GELESBY
+                8       PLANE
+                9       DESKJET
+                10      EARNEST
+
+Bambuzle
+Passwords:      n/a
+                INNUENDO
+                ACTUALLY
+                CANNIBAL
+                SHADOWS
+                THUNDER
+                JOURNEY
+                REVENGE
+                HEADLONG
+                HITCHER
+                ANIMALS
+                FREEDOM
+                DIAMONDS
+                PRESSURE
+                SULTANS
+                SUICIDE
+                ALCHEMY
+                PARTYMAN
+                EMPEROR
+                KITTYKAT
+                DENSITY
+                QUALITY
+                COUNTACH
+                BLUEBIRD
+                SUNBEAM
+                DISASTER
+                CHARIOT
+                LAMBADA
+                ZEPPLIN
+                HEINKEL
+                FIREWALL
+                TYPHOON
+                WARHAWK
+                MIRAGE
+                INTRUDER
+                PHANTOM
+                CHINOOK
+                DIGITAL
+                TEXTILE
+                ANIMATE
+                BABYLON
+                SAMOS
+                ALMAGEST
+                GALILEO
+                SKYLAG
+                THOUUUUU
+                EMANEMS
+                PLAYTHEM
+                ARXESLTD
+                LASTONE
+
+Blowpipe
+Infinite Lives  - Play one game, and when it has finished change the keys and
+restart - you should now have infinite lives.
+Credits         - To get loads of credits play the first level several times,
+but make sure you die before the end of it, when you finally complete the
+level you should have loads of credits. This only works on versions bought
+before June 1991.
+
+Bughunter
+Addresses:      1 - 4   98 Acorn Avenue
+                5 - 8   23 Castle Road
+                9 - 16  42 Ford Street
+                17 - 24 14 Brumley Estate
+                25 +    31 Brumley Estate
+
+Bughunter in Space
+Passwords:      1 - 4    HUMANOID
+                5 - 8    ADAMSKI
+                13 - 16  SUGGS
+                17 +     POSDNUOS
+
+C
+
+Chaos 
+See Spheres of Chaos
+
+Chuck Rock
+Cheat modes     - 1) On the title screen enter: 'PINKYANDPERKY' this will
+allow you to fly in the game if you press the 'F' key.
+                  2) On the title screen enter: 'ERMINTRUDE' this will make
+you invulnerable; be warned - you can still drown. 
+
+Cycloids
+Level Jump      - To access the 'doors' which allow you to skip to levels 5,
+10, 15 and 20 then open up the '!Cycloids' application and go into the 
+'MiscData' directory and load the file 'LSStuff' into edit, delete the only
+byte here and then replace it with the requires level skip (ie hold down
+'ALT' and type in '5', '10', '15' or '20' on the keypad) and then save it.
+
+
+DropShip
+Passwords:      A        ABACUS
+                D        DAHLIA
+                G        GAGGLE
+                J        KAUNDA
+                M        NAUTCH
+
+E
+
+E-Type Bugs     - 1) If you come to a haltdirectly under a time bonus then
+you will receive the time bonus every few seconds.
+                  2) If you have selected to race 'All Tracks' then, during
+the game, if you slam on the breaks with about 1 second left on the clock.
+The screen should go crazy and on the next course your distance travelled
+should be increased by a few 10s of kilometres.
+
+Ego
+See Repton 4.
+
+Enter the Realm
+Cheat mode      - On the screen where you are asked to press fire, press CTRL
+& SHFT together and press fire. It will then ask you to press fire again,
+now let go of the keys and press fire to start, you now have infinite lives.
+(I cannot get this to work!)
+Bug             - On the forest instead of going to the church go straight to
+the cave, you will meet the priest as when you go to the church, but at the
+cave instead.
+
+[Note inserted by AjC: To get Realm to work under RISC OS 3.1, you will have
+to run the Commands file from the RISC OS 3 Support disc.]
+
+F
+
+Fervour
+Passwords:      Here are the passwords for the 'Beginner' file:
+
+        Level    Password       Editor Password
+        1        Level0         EasyPeasy
+        2        Simplicity     Complexity
+        3        LemonSqzy      Assembler
+        4        NeedTime       GotTime
+        5        UpAndDown      AndBackUp
+        6        Sihouette      Hurricane
+        7        VeryWhite      AppleWhite
+        8        Plausible      Coordinate
+        9        BitJerky       NotToBad
+        10       Repertory      Inception
+        11       ILoveBends     DoYou
+        12       Shower         Irritate
+        13       Copula         Tapestry
+        14       Compress       Expand
+        15       Life           Automatic
+        16       Patrimony      Moraine
+        17       Barcelona      FreddieM
+        18       Remember       Awarded
+        19       Banana         Redraw
+        20       Andrew         Hersee
+        21       Window         Philosophy
+        22       Torque         Protrude
+        23       Illustrated    Archimedes
+        24       Reversed       WellDone
+
+Fred
+Passwords:      1        n/a
+                2        APRILRAIN
+                3        BUBBLEBATH
+                4        CLASSIFIED
+                5        DISKBOX
+                6        LOLLYPOP
+                7        EASTEREGG
+                8        DOUGHNUT
+                9        RAINBOW
+                10       BUTTERBEAN
+                11       WATERFALL
+                12       LIGHTBULB
+                13       PUZZLER
+                14       PANZERTANK
+                15       SUNGLASSES
+                16       DIGERYDOO
+                17       COPPERTOP
+
+G
+
+Galactic Dan
+Passwords:      1        SECTOR ONE
+                2        LANDER
+                3        REDWOOD
+                4        DESERT SPOON
+                5        MOONFAKER
+                6        BADGER
+                7        CHARLIE CHAN
+                8        BEAVER SCOUT
+                9        CHOCOLATE
+                10       REVCO
+                11       THUNDERBOWL
+                12       FIRE WALK
+                13       BLACK LODGE
+                14       WINDOM EARLE
+                15       NIGHT STALK
+                16       CANDYFLOSS
+                17       MIDSUMMER
+                18       STRAWBERRY
+                19       WILLOW
+                20       TEACUP
+                21       LOVESTEAL
+                22       TRIPLE NINE
+                23       CAMUS
+                24       CLEANUP
+
+GODS
+Lives           - !&8240 = <# of lives>
+Score           - !&838C = <score>
+Credits         - !&81F8 = <no of credits>
+Energy          - !&8688 = <energy>
+
+Grievous Bodily 'Arm
+Cheat mode      - On the selection screen make sure 'Caps
+Lock', 'Num Lock' and 'Scroll Lock' keys are off and click on an option,
+then put 'Caps Lock', 'Num Lock' and 'Scroll Lock' on and click on another 
+option and play. You can now withstand more hits.
+
+Guile
+Passwords:      1       TROGLODYTES
+                2       AULDENBARREN
+                3       CHILLIANOSON
+                4       BANKINONITT
+                5       CIRIUS-EYESORE
+                6       TRIPINOVA
+H
+
+Hostages
+Cheat Mode      - When the letters of the title screen fall down onto the
+screen hold down the keys H,U,R & T you can now start on any level.
+
+HoverBod
+Cheat modes     - 1) During the game hold down both Shift keys and
+the Slash key on the keypad. This will freeze all the monsters.
+                  2) Also, if you press both Shift keys and the asterisk key
+on the keypad you will jump to the last section of the game, but cheat 1) 
+will not work. 
+Passwords:      1        MINERVAS
+                2        SIRBARRY
+                3        ZOTYBLOB
+                4        FLUMPIES
+                5        SQUIDGEE
+                6        WOBBLIES
+                7        POSSKETT
+
+J
+
+James Pond
+Score           - !&B704 = <score>
+                  !&B708 = <score>
+Cheat Mode      ô Pause the game (using TAB) and type in the following:
+êYNGWIE†J†MALMSTEENë  The words êCheat Mode Onë should now appear under the
+paused legend. You are now invulnerable. also you can go straight to a
+mission by pressing the corresponding number key 1=mission 1, 2=mission 2
+etc.               
+
+K
+
+Kaptain Konflict
+Passwords:      1        MARBLE
+                2        SPEAKER
+                3        STATIC
+                4        IMPACT
+                5        MOBILE
+
+L
+
+Lemmings
+Cheat mode        - Enter as a password 'IAMNOTGOOD' this will allow you to 
+skip levels by using the space key.
+
+Passwords:   FUN             TRICKY          TAXING          MAYHEM
+        1    DAVIDJONES      KELLIESEYE      SEEITTONON      NEARLYGONE
+        2    DINKIEDOOS      SINGLEDUCK      JUSTFORYOU      LEMMINGDUE
+        3    WHENYOUSEE      LOOKANDSEE      RUNANDFLEE      SPENDSPREE
+        4    OPENSADOOR      MANYANMORE      DOORTODOOR      ONTHEFLOOR
+        5    LEMMSALIVE      CANSURVIVE      STILLALIVE      UNCLECLIVE
+        6    ONESINAFIX      LEMSBRICKS      FIXEDMYFIX      CLOGCLICKS
+        7    LUCKYSEVEN      WALKINGSTK      ANUREBEVAN      DIFFERENCE
+        8    ONEFATLADY      DONTBELATE      HELPMEMATE      WAITANWAIT
+        9    WASHINLINE      DOINITFINE      DRINKNWINE      EATANDDINE
+        10   JMAJORSDEN      LEMMSAGAIN      TENPERCENT      TENTONTESS
+        11   LOVELYLEGS      LEMMINLEGS      STICKUPTWO      BINISTHREE
+        12   JUSTADOZEN      ONTHESHELF      DIGINDELVE      TWOTIMESIX
+        13   UNLUCKYYOU      YOURINLUCK      HISBADLUCK      RETURNTOME
+        14   ATENANFOUR      FOURTEENIE      TEENSFORTH      TWICELUCKY
+        15   THREEFIVES      FIVETEENIE      TEENSFIFTH      NINEANDSIX
+        16   VERYSWEETY      SUGARLEVEL      NOTSOSWEET      CHARITYNUM
+        17   SEVENANTEN      YEARTOWAIT      DRIVEUKCAR      STILLYOUNG
+        18   KEYOFADOOR      AGECANVOTE      VOTESFORME      COMESOFAGE
+        19   LASTEENAGE      LESSTWENTY      TENSTONINE      OLDERSTILL
+        20   SECONDSCOR      TOTIMESTEN      DOUBLESTEN      NUMBTWENTY
+        21   TODAYTODAY      HALFANSWER      LOCKANDKEY      OLDERLEMMS
+        22   DOUBLEDUCK      DUCKSTWICE      TWOELEVENS      LEMMINDUCK
+        23   TWOANTHREE      ONEISFORME      JUSTFOREME      SOONBEFREE
+        24   SENTRYDOOR      PLAYINMORE      LEMMINMORE      LEMMSSTORE
+        25   QUARTERTON      LEMSSTRIVE      JIVEANJIVE      LEMMSDRIVE
+        26   THISISAFIX      CHOPSTICKS      LEMSINAFIX      YOURINAFIX
+        27   LOWINDEVON      ALUCKYDUCK      LEMSHEAVEN      LEMTODEVON
+        28   SELLBYDATE      SHUTMYGATE      GARDENGATE      TWOSTOPLAY
+        29   GOLDENLINE      WOTSMYLINE      STARTOWINE      ONEAFTERME
+        30   DIRTYGIRTY      HURTYHURTY      FIVEXSIXIS      LEMMGFINAL
+
+The Last Ninja
+Lives   - !&63FF0 = <# of lives>
+Energy  - !&63FC8 = <energy>
+Weapons - !&63FF8 = <weapon word>* Bombs        - !&64024 = <# of bombs>
+Stars   - !&64028 = <# of stars> Walk on water  - !&1D630 = &E8BD8000 Cheat
+Mode    - Start a game and then pause it (by pressing COPY) you should see
+the word 'PAUSED' on the screen. Now press the 'L', 'V', '4', '2' & '6' (The
+planet in Alien!) keys simultaneously. The border around the word 'PAUSED'
+will change from White to Blue. Now, in the cheat mode you can use the
+following keys to do the following effects:
+        Key        Effect
+        F5         Toggle infinite energy**
+        F6         Toggle invincibility**
+        F7         Infinite lives**
+        F8         Skip to next screen**
+        F9         Toggle hidden object pointer**
+        F10        Save screen to disc
+        F11        Toggle Slow Motion**
+        F12        Skip to next level**
+
+*The weapon word consists of a word with bits set for each weapon, the bits
+are taken from the order of the weapons on the screen, ie bit 0 is the
+staff, bit 1 is the Nunchakas etc
+**This effect will only happen when the game is paused...
+
+The Lost Temple
+Cheat mode      - Before running the game press F12 and type in the
+following:
+                *MemoryA 0 1
+and press return to return to the desktop, then run the game as normal, the
+words 'Cheat Mode On' should appear on the top right hand corner of the
+screen, you can now access any level from 1 to 10, and (I think) you have
+extra energy.
+
+Lotus Turbo 2
+Passwords:      1        n/a
+                2        DARK SKY
+                3        FOGY FOG
+                4        ICELAND
+                5        CACTUS
+                6        MANIAC
+                7        DAMP PATCH
+                8        CLOUDBURST
+
+M
+
+Mad Professor Mariati
+Infinite Lives  - !&A96B4 = 0
+
+Man At Arms
+Passwords:      1        n/a
+                2        INCUBUS
+                3        STRANGE
+                4        PULSARS
+
+Minotaur
+Various pokes   - Load the file 'MINOM' into RISC OS 3 Edit or any
+BasicEditor and go to line 260:
+                Alter mino%=1 to mino%=0 to remove the minotaur
+                Alter sword%=0 to sword%=1 to get the sword from the start
+                Alter men%=9 to men%=<# of men to rescue>
+                Alter maps%=0 to maps%=4 to get the all the map from start
+
+MoonDash
+Passwords:      1        DELTOID
+                2        SPEAKER
+                3        BLANCHE
+                4        AGADOO
+                5        PEACH
+                6        HELPLESS
+                7        BOOGIE
+                8        GNOME
+                9        GRUBBY
+                10       JINGLE
+                11       DUNCE
+                12       CRIPES
+                13       MANUAL
+                14       SILVERDON
+
+N
+
+Nebulus
+Score           - !&5DBA8 = <1's score>
+                - !&5DBAC = <2's score> Time
+                - !&30220 = <base time level 1>
+                  !&30224 = <base time level 2>
+                  !&30228 = <base time level 3>
+                  !&3022C = < "    "    "    4>
+                  !&30230 = < "    "    "    5>
+                  !&30234 = < "    "    "    6>
+                  !&30238 = < "    "    "    7>
+                  !&3023C = < "    "    "    8>
+
+Nevryon
+Passwords:      1        n/a
+                3        MIRADOR
+                5        ISENGARD
+                7        KRYNN
+Bug:    - To access any level without needing to type in the password, go
+onto the options screen and select your level, then instead of clicking on
+the 'Start†Game' option click on 'Redefine Keys' and then when ask whether
+you want to redefine your keys press 'N' you will be returned to the option
+screen, now you can click on 'Start Game' without needing to type in the
+password!
+
+O
+
+Oh No! More Lemmings
+Cheat mode - Enter as a password 'FIDDLECODE' this will allow you to
+skip levels by using the space key.
+Passwords:    TAME             CRAZY            WILD             WICKED
+       1      DAVIDJONES       ONEWHEELON       INWHATEVER       HELPIVEGOT
+       2      DONETHEONE       CRAZIERNOW       ITHINKOFOK       FOURTYMORE
+       3      BLINDMOUSE       FIDDLEDEDE       NEIGHBOURS       PASSWORDTO
+       4      QUADROPODS       KNOCKKNOCK       CELLBLOCKH       THINKUPAND
+       5      GOLDENRING       WHOSETHERE       CROSSROADS       IAMRUNNING
+       6      MIDDLEYEAR       ITSANNHERE       FEMMERDALE       OUTOFIDEAS
+       7      DEADLYSINS       ANNANNEWHO       HOMEANAWAY       RATHERFAST
+       8      SPIDERLEGS       ANOTHERLEV       EASTENDERS       SOPLEASEIF
+       9      NUMBERNINE       MORETOCOME       JXJDXXFXSD       YOUAREABIT
+       10     DOWNINGSTR       GREENBOTTS       THEREWASAN       UPSETBYALL
+       11     NINEANDTWO       GOTYOUTHEN       EXAMPLELEM       THISTHENIM
+       12     SIXPLUSSIX       ITSHARDYOU       PASSWORDST       QUITESORRY
+       13     BAKEADOZEN       SEETOTHINK       OHHIDOLIKE       DIDDLEIDEE
+       14     TWICESEVEN       OFPASSWORD       TOBEBESIDE       DIDDLEIDUM
+       15     FIVETHREES       AFTERPASSW       THESEASIDE       TRALALALAA
+       16     ONEANDASIX       ORDFORTHIS       OHTHEBRASS       TREELELELE
+       17     SEVENANTEN       LEVELSDISK       BANDPLAYIN       NATHANPAUL
+       18     YOUCANVOTE       ANDIAMABIT       TIDDLYUMUM       WEAREGOING
+       19     NNNINETEEN       LAZYNOWAND       WOTSMYLINE       OUTTOLUNCH
+       20     TENPLUSTEN       IAMPUTTING       HURTYHURTY       LATERTODAY
+
+                HAVOC
+       1        FORFISHAND
+       2        CHIPSTOEAT
+       3        CANTAFFORD
+       4        OWTELSESEE
+       5        EEELADWHAT
+       6        DEYERTHINK
+       7        OYORKSHIRE
+       8        THASGOTTER
+       9        GIEMCREDIT
+       10       ANDTETLADS
+       11       UPINDUNDEE
+       12       FTLEMMINGS
+       13       XXXDAKKIJF
+       14       THESETEXTS
+       15       AREPRESENT
+       16       FORGETTING
+       17       ATTHELEVEL
+       18       YOUMAYWANT
+       19       TOPLAYFROM
+       20       GOODBYEALL
+
+Orion
+Cheat mode      - When you are on the instructions or the high score table
+press the keys L,U,C and the Spacebar together. You will be asked which 
+level you want to start on and you will start with 99 lives and 99 smart
+bombs.
+
+OverLoad
+Passwords:      1        A B BROS
+                2        CABBAGED
+                3        SLIPPERS
+                4        PREVIOUS
+                5        PILLAGED
+                6        BOVERBOD
+                7        LAVATORY
+                8        CASSETTE
+                9        WHALE FM
+                10       EXTRACTS
+                11       STOPKETS
+
+P
+
+Paradroid
+Cheat mode      ô       Start a new game, pause the game, then hold down the
+following keys: 'C' '2' 'T' and the number on the keypad of the ship to which
+you want to go. Then, while still holding these keys, press escape. Next time
+you start a game then you will go to the specified ship.             
+
+Pipemania
+Passwords:      1        MOUNTAINEERS
+                2        GELATINOUSLY
+                3        AMBIDEXTROUS
+                4        CAULIFLOWERS
+                5        VARICOLOURED
+                6        SACRELIGIOUS
+                7        FOUNTAINHEAD
+                8        OSTENTATIOUS
+
+Powerband
+Cheat modes    - 1) Select automatic gears, choose a race track, start
+racing, accelerate to chosen speed, and change to neutral, you should keep 
+moving constantly and be indestructable.
+                 2) Select va-voom engine in fun mode - and you will retain 
+it even in the competition.  
+
+Pysanki
+Missiles      - !&1F150 = <# of missiles>
+Lives         - !&1F104 = <# of lives>
+Oxygen        - !&1F0CC = <amount ofoxygen>
+Energy        - !&1F0C8 = <amount of energy>
+Passwords:      1        n/a
+                2        FASHION
+                3        VISUALS
+                4        GRAPHIC
+                5        DIAMOND
+                6        RAPPORT
+                7        SABBATH
+                8        CLINKER
+
+Q
+
+Quazar
+Lives           - !&3BA64 = <# of lives>
+Targets shot    - !&3BF58 = <# targets shot>
+Infinite lives  - !&3C98C = &E2500000
+Always finish   - !&3CBA8 = &FA00D31A
+Invunerable     - !&3C2E4 = &E2500000
+Passwords:      1        n/a
+                2        SPEAKER
+                3        LIGHT
+                4        MERCEDES
+                5        PHYSICS
+                6        KOJAK
+                7        ELECTRON
+                8        PLANT
+                9        BARBOUR
+                10       PIZZA
+                11       ROWER
+Passwords2:     On some versions you might find the above passwords don't
+work, in this case try the following passwords: 
+                1        n/a
+                2        LIZARDS
+                3        SPIDERS
+                4        PEDANTIC
+                5        ANALYSIS
+                6        LARKIN
+                7        COMPANY
+                8        MANUAL
+                9        TRADING
+
+R
+
+RedShift
+Cheat mode      - When the game loads in type in 'PHASING GERALD' after the
+'H' the screen will change to the help screen, ignore this. If you have
+correctly then the computer will beep. Then press 1 or 2 to play, then when
+your energy is low press 'E' and when your turbo energy is low press 'T'
+
+Repton 3
+Passwords:      Level    Password       Edit Code
+
+                File: Prelude
+                A        PRELUDE        58899
+                B        RESCIND        61566
+                C        PERIWIG        56484
+                D        MORTIFY        55379
+                E        FORSAKE        46945
+                F        GRATIFY        45386
+                G        THISTLE        57817
+                H        SPANGLE        37228
+
+                File: Toccata
+                A        TOCCATA        59725
+                B        NOCTURN        60006
+                C        LIBERAL        64377
+                D        INSPECT        55222
+                E        DELIGHT        63743
+                F        BOTANIC        42412
+                G        VITRIOL        56207
+                H        SACKING        49777
+
+                File: Finale
+                A        FINALE         63739
+                B        YARDARM        64265
+                C        ZEALOUS        46364
+                D        WITHOUT        52210
+                E        AVIATOR        52320
+                F        ELDERLY        51776
+                G        JUNIPER        55410
+                H        CRIMSON        56608
+
+                File: America
+                A        AMERICA        72965
+                B        HERBAGE        77437
+                C        KITCHEN        75585
+                D        OUTCAST        47472
+                E        QUARTER        62367
+                F        UNTWINE        68145
+                G        TREMBLE        76453
+                H        STRANGE        46852
+
+                File: Arctic
+                A        ARCTIC         47534
+                B        KINETIC        55458
+                C        GONDOLA        53231
+                D        LOZENGE        28015
+                E        ROTUNDA        50323
+                F        FRONTAL        46430
+                G        YOUNGER        49460
+                H        CLEANSE        38538
+
+                File: Orient
+                A        ORIENT         60222
+                B        ORGANIC        61969
+                C        ARMHOLE        61318
+                D        VISIBLE        65375
+                E        NEGLECT        44713
+                F        BIPLANE        47349
+                G        UMBRAGE        51043
+                H        JANITOR        59941
+
+                File: Oceans
+                A        OCEANS         66541
+                B        DISDAIN        62344
+                C        MUNDANE        59519
+                D        ECLIPSE        58096
+                E        WARNING        50775
+                F        HUMDRUM        57382
+                G        PANTHER        61684
+                H        ITERATE        57790
+
+                File: Africa
+                A        AFRICA         59951
+                B        QUICKLY        58162
+                C        ZIGZAGS        58401
+                D        CLOSELY        58002
+                E        PANOPLY        34727
+                F        BONFIRE        41114
+                G        HISTORY        61948
+                H        NUCLEUS        56483
+
+                File: Baby
+                A        BABY         52051
+                B        STARTLE        66766
+                C        MEASLES        65943
+                D        GRANITE        52891
+                E        WHIMPER        58018
+                F        CUSHION        49351
+                G        ALIMONY        53421
+                H        UTENSIL        46357
+
+                File: School
+                A        SCHOOL         62156
+                B        QUALIFY        66230
+                C        KNICKER        55703
+                D        DYNAMIC        56775
+                E        TENDRIL        61690
+                F        LANYARD        66269
+                G        VINEGAR        60671
+                H        YASHMAK        69808
+
+                File: Teenage
+                A        TEENAGE        67063
+                B        ETERNAL        57784
+                C        WHISPER        45550
+                D        FEATHER        37236
+                E        RHUBARB        43386
+                F        JASMINE        42276
+                G        KNUCKLE        52421
+                H        IMAGINE        58010
+
+                File: Work
+                A        WORK           62193
+                B        INVERSE        50848
+                C        PARAPET        59712
+                D        ELEGANT        68281
+                E        SCRATCH        54392
+                F        COUNTER        55251
+                G        GARMENT        54898
+                H        WALKOUT        54326
+
+                File: OAP
+                A        OAP            62963
+                B        JACKDAW        56272
+                C        RUPTURE        63244
+                D        ARCHERY        59961
+                E        FIGMENT        45854
+                F        NATURAL        64632
+                G        TONIGHT        64804
+                H        BRIGADE        92836
+
+                File: Prehist
+                A        PREHIST        55833
+                B        DORMANT        51788
+                C        MINERAL        57255
+                D        VARNISH        58812
+                E        DASHPOT        55748
+                F        LOBELIA        61355
+                G        UPRIGHT        60068
+                H        HABITAT        86914
+
+                File: Egypt
+                A        EGYPT          62302
+                B        LOBSTER        55913
+                C        TABLOID        70938
+                D        ACHIEVE        64435
+                E        GRISTLE        60631
+                F        DECEIVE        68769
+                G        SCALPEL        52793
+                H        OBVIOUS        59544
+
+                File: Victori
+                A        VICTORI        65798
+                B        EARNEST        75730
+                C        PERVADE        65672
+                D        VIOLENT        59994
+                E        BASHFUL        51354
+                F        MAGNIFY        54930
+                G        WROUGHT        60634
+                H        HORIZON        58577
+
+                File: Now
+                A        NOW            55178
+                B        CHARITY        52088
+                C        FUNERAL        45896
+                D        JUSTIFY        51760
+                E        NAUGHTY        57030
+                F        ISOLATE        52925
+                G        RADICAL        49227
+                H        KEYRING        68350
+
+                File: Future
+                A        FUTURE         64195
+                B        PRIMATE        61940
+                C        MUSTANG        65790
+                D        ITERATE        53679
+                E        CAUTION        59627
+                F        SALIENT        69039
+                G        BISCUIT        60141
+                H        EXPLORE        63164
+
+Rockfall
+Passwords:      5       EXXAOQKY
+                10      QGIBKYMM
+                15      DGZCRKVQ
+                20      DSEDPZQW
+                25      CJBEUFWB
+                30      WMCFPIJW
+                35      LJCGLLYG
+                40      XOXHMJLI        
+                45      TUNIZBRZ
+                50      ZEBJDOFM
+                55      DOSKWFLF
+                60      GMTLWVYF
+                65      UVLMXYDX
+                70      QHWNLXSE
+                75      DLWONRUN
+                80      IIWPNCOW
+                85      VRZQWCPR
+                90      WSBRKQTX
+                95      ESMSJRVP
+                100     VUJTSSPu
+
+Rotor
+Passwords: combat        PIT
+                1        GAG
+                2        LIP
+                3        SLY
+                4        MEW
+                5        AWE
+                6        TNT
+
+Repton 4 - Ego
+Lives           - !&1EE94 = <# of lives>
+Score           - !&1EE04 = <score>
+# wrong         - !&1EE9C = <wrong pieces>
+Cheat mode      - Type in as a password 'BLACKCAT' this will give you 10
+                  lives next time you start. It will also allow you to view
+                  the map and pictures on any level.
+Passwords:      1        START...
+                2        ELEPHANT
+                3        COMEDIAN
+                4        SKELETON
+                5        ELECTRIC
+                6        RIFLEMAN
+                7        ORIGINAL
+                8        DISASTER
+                9        FLATBOAT
+                10       CREATURE
+                11       MOTORIST
+                12       DOGHOUSE
+                13       QUESTION
+                14       GIMMICKY
+                15       WORDPLAY
+                16       HORRIBLE
+                17       BUNGALOW
+                18       GRACIOUS
+                19       RESTRICT
+                20       DOWNTOWN
+                21       EMBLAZON
+                22       VOLATILE
+                23       EVACUATE
+                24       RIFFRAFF
+                25       IMPINGED
+                26       OINTMENT
+                27       DROWSILY
+                28       ANACONDA
+                29       SELECTED
+                30       BEQUEATH
+
+S
+
+Square Route
+Passwords:        Here are all 250 (!) passwords I have not listed them with
+the level numbers as this would have taken me too long to type out (I got
+these straight from the program!) You cannot access the second 'THINK' level
+due to the repeated password.
+                START
+                GLASS
+                MOVING
+                TWISTING
+                CRASH
+                HUH
+                SWITCH
+                WORMS
+                WHITE
+                DISC
+                MUNDANE
+                PILL
+                EASY
+                LINE
+                MESS
+                CROW
+                HOLE
+                CLOSE
+                A MEAGRE
+                A THING
+                BOWL
+                BUTTON
+                HOTPOT
+                DIAMOND
+                EYE SCE
+                SEE MOR
+                GOOD EGG
+                JOYSTICK
+                LEFTWAY
+                MOUSE
+                QUICKLY
+                SPIN
+                TURN
+                WHAT
+                CROSS
+                DOWN
+                STICK
+                DISCOVER
+                FLAN
+                FLY
+                FORCE
+                HELP
+                LINES
+                EGGWHITE
+                OHVALE
+                PLANE
+                PLASTIC
+                RUN
+                SERIAL
+                SHIELD
+                SLIDE
+                SMALLX
+                STACEY
+                XMARKS
+                ROTATE
+                BAND
+                BLOW OUT
+                TIME OUT
+                CHICKEN
+                SURROUND
+                SHAPEUP
+                PILLOW
+                SLOT
+                STREAK
+                TURNED
+                BLUECROS
+                CAT
+                CUP
+                PULSE
+                FUNNY
+                PILLAR
+                PLAIN
+                DISPLACE
+                DATPLACE
+                DIGGER
+                CUNNING
+                THINK
+                SIMPLE
+                MINDS
+                DOT
+                ARROWS
+                BOB
+                CHESS
+                CLOWN
+                FOLLOW
+                HABIT
+                SLIPPERY
+                NOPE
+                REDLINE
+                REDX
+                STRANGE
+                XTREE
+                LIMIT
+                MINTS
+                SLY
+                DEMONIC
+                ROVER
+                HOUR
+                VIZ
+                GRUNT
+                BASIC
+                WHO
+                ARNIE
+                WRAPPING
+                OUCH
+                UNLOCK
+                THROUGH
+                EGGTIME
+                BARRIER
+                SYSTEM
+                RETURN
+                COMPAQ
+                CANON
+                HURRY
+                LONG
+                STARNES
+                DIVIDE
+                MILLS
+                HEAD
+                OFFICE
+                ENGINEER
+                LEADER
+                GEORDIE
+                MUSICAL
+                DIGITAL
+                MIDI
+                FLASHY
+                PASSAGE
+                MEMORY
+                BENEFITS
+                POLE
+                TAXI
+                WINDOWS
+                MANAGER
+                CONNECT
+                PHONE
+                GRAPHICS
+                REPLACED
+                PANIC
+                INDEXED
+                FACILITY
+                POSSIBLE
+                THINK
+                NETWORK
+                SERVERS
+                TERMINAL
+                CONTROL
+                INCLUDE
+                DEVICES
+                MONTHS
+                CAUSE
+                BEFORE
+                BOARD
+                EXAMINE
+                SLAVIK
+                WARNING
+                UNIT
+                DETAILS
+                OPERATE
+                FLIPPY
+                SPLAT
+                WONKY
+                TIMES
+                HISTORY
+                MONITOR
+                STANDARD
+                HORIZONS
+                PICTURE
+                HARDWARE
+                COMPLETE
+                CONNECT
+                BEARD
+                HESS
+                SPANDAU
+                BALLET
+                LAIKA
+                SPUTNIK
+                PROBE
+                LANCE
+                MILES
+                DISTANCE
+                METRES
+                FINISHED
+                FLOWY
+                TUNA
+                GHOTI
+                MEDWAY
+                MARGATE
+                BRIGHTON
+                GOODLUCK
+                GULL
+                GREBE
+                SWOLLOW
+                EAGLE
+                BOYS
+                OWNBENO
+                DANDY
+                2000 AD
+                MAYFAIR
+                FROG
+                TOAD
+                TADPOLE
+                NEWT
+                GNAT
+                FLEGGAR
+                TOPPY
+                AERIAL
+                ALANTIX
+                ANAM
+                BOGO
+                BOOM
+                COMBO
+                DUDES
+                DUNNO
+                ERNYGA
+                FOOT
+                TOES
+                FUNKY
+                ABACAB
+                HEATHER
+                IMPOSTER
+                ARGONAUT
+                SNOOPY
+                LINUS
+                CHARLIE
+                KINDRED
+                KITKAT
+                TUNELESS
+                MELON
+                LEGGS
+                MONTY
+                MUNSTERS
+                ONEWAY
+                PATCH
+                PELOTA
+                POMPOM
+                RADION
+                RSM
+                SARGY
+                COME ON
+                SID
+                YOYO
+                SKATER
+                SUFFER
+                TICKTOCK
+                TIKTAK
+                TIMMY
+                LEYLAND
+                VECTOR
+                FINALLY 
+Amount blocks - !&C090 = <amount of blocks to drop>
+
+Spheres of Chaos
+Cheat mode     - On the title screen in the top left hand corner it gives
+the amount of lives (0 initially!) click on that number about fifty times,
+until the screen border flashes red. Now, when you start, pressing the 
+'DELETE' key during game will give you an extra life.
+
+SuperPool
+Cheat Mode     - 1) When opponent fouls, press 'P' to place white in baulk
+area, then play the shot to hit a ball and press 'P' again, the white will 
+return to the baulk area, but the struck ball will disapear - do not do this
+with the black on superpool.
+                 2) When the opponent hits the ball hold down the down
+cursor key to make the ball speed up when it hits the cushion.
+        
+SWIV
+Cheat mode     - Pause the game (press F1) and type in the word 'NIGEL' and
+press return, the border should flash, you now have infinite lives. 
+To remove the cheat (i.e. to see the ending sequence) repeat the 
+above procedure.
+
+Saloon Cars
+Cheat mode     ô On the title screen type in either êANDYë or êSWAINë and
+then chose a menu option, next time you return to the main menu, there will
+be an extra option at the bottom of the menu
+
+T
+
+Technodream
+Cheat Mode     - Choose to play as the Blue player, and then press space
+and hold it down until the games starts - you now have improved speed, the 
+ram, missiles, and 4 lives.
+Passwords:      Level    Zone     Password
+                1        1        LEVELONE
+                1        2        ASTRA
+                1        3        BLUEROOM
+                2        1        EARTH
+                2        2        GAIA
+                2        3        MOONDUST
+                3        1        NEBULUS
+                3        2        ORBITAL
+                3        3        STAR
+
+Terramex
+Cheat mode     - On the title screen type in 'SUBJECTTOCHANGE' the words
+'Cheat Mode On' should appear at the top of the screen. You now have infinite
+lives.
+
+ThunderMonk
+Passwords:      Month     Level 1    Level 2    Level 3    Level 4
+                January   SHIRT      JUMPER    WELLIES     Y-FRONTS
+                Feburary  LOVERS     HEARTS    CUPID       VALENTINE
+                March     DANIEL     AND       SIMONS      BIRTHDAY
+                April     JOKES      SHOWERS   FOOL        SPRING
+                May       POLE       EXAMS     SUNNY       STUDY
+                June      STEVES     BIRTHDAY  MIDSUMMER   WARMER
+                July      HOLIDAYS   MAJORCA   SUNHAT      HOTTER
+                August    RESULTS    FAILED    PASSED      PISSUP
+                September SCORCHER   RESTART   SUNBURN     ARCHIE
+                October   SPOOK      SHIVER    HALLOWEEN   COOLING
+                November  BONFIRE    WEEEEEE   FIREWORKS   CHILLY
+                December  CHRISTMAS  HOLLY     PRESENTS    MERRY!
+
+Top Banana
+Infinite Lives - !&A3CC = 0
+
+Z
+
+Zarch
+Cheat mode     - During the game press Q,U & T together. Then you can press
+'D' to toggle the autopilot, 'L' to get an extra life and 'F' to refuel.
+
+Zool
+Cheat mode     - On the introduction screen type in the word 'PICKEREL' now
+during the game you can press keypad '+' for invulnerability, 'Page Up' for
+the next level and 'Home' for the next world.
+Credits        - On the introduction
+screen type any of the names on the High- score table to see the credits,
+press 'Return' to continue.
+
+2067BC
+Passwords:     1         n/a
+               2         JOURNEYMAN
+               3         SILHOUETTE
+               4         REMUNERATE
