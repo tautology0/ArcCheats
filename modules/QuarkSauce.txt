@@ -1,0 +1,223 @@
+REM >Basic
+REM Created on Thu,26 Aug 1993
+REM by Arm Tool - by Riscy Developments, 1993
+
+ONERRORREPORT:PRINT" @ ";ERL:END
+DIM Code &1000
+FOR pass%=4 TO 6 STEP 2
+P%=0:O%=Code
+PROCcode(pass%)
+NEXT
+SYS "OS_File",10,"Quarkcheat",&FFA,,Code,O%
+END
+:
+DEFPROCcode(pass%)
+[OPT pass%
+                     &0
+                     &init
+                     &final
+                     &0
+                     &title
+                     &help
+                     &helptable
+.title               :="QuarkCheat":=0
+.help                :="Quark Cheat":=9:="1.00 (99 Tut 1900) By some programmer":=0
+                     align
+.helptable           :="Cheat":=0:align
+                     &0
+                     &0
+                     &0
+                     &helptext1
+                     
+                     ="QuarkCheat":=0:align
+                     &quarkcheat
+                     &&10000
+                     &syntax
+                     &helptext2
+                     &0
+
+.helptext1           :="The module allows you to do the following:":=13:=10
+                     ="F9":=9:="= toggle autofire":=13:=10
+                     ="F10":=9:="= toggle invunerability":=13:=10
+                     ="CTRL+P":=9:="= don't lose power when lose life":=13:=10
+                     ="CTRL+S":=9:="= don't lose speed when lose life":=13:=10
+                     ="WARNING: Do NOT use this module outside of Quark..."
+                     :=0
+                     align
+.helptext2           :="*Quarkcheat turns the Quarkcheat on or off, or gives the current state":=13:=10
+.syntax              :="Syntax: *Quarkcheat [On|Off]":=0:align
+                     
+.errorblks           &0
+                     :="Syntax: *Quarkcheat [On|Off]":=0:align
+                     
+.init                stmfd   13!,{0-3,14}
+                     mov     0,#&10
+                     adr     1,code
+                     mov     2,#0
+                     swi     "XOS_Claim"
+                     mov     0,#1
+                     str     0,claimed
+                     ldmfd   13!,{0-3,pc}^
+                     
+.final               stmfd   13!,{0-3,14}
+                     ldr     0,claimed
+                     teq     0,#0
+                     ldmeqfd 13!,{0-3,pc}^
+                     mov     0,#&10
+                     adr     1,code
+                     mov     2,#0
+                     swi     "XOS_Release"
+                     ldmfd   13!,{0-3,pc}^
+                     
+.quarkcheat          stmfd   13!,{2-12,14}
+                     teq     1,#0
+                     beq     isclaim
+.loop                ldrb    1,[0],#1
+                     teq     1,#32
+                     beq     loop
+                     teq     1,#ASC"O"
+                     teqne   1,#ASC"o"
+                     bne     error
+                     ldrb    1,[0],#1
+                     teq     1,#ASC"n"
+                     teqne   1,#ASC"N"
+                     beq     on
+                     teq     1,#ASC"f"
+                     teqne   1,#ASC"F"
+                     bne     error
+                     ldrb    1,[0],#1
+                     teq     1,#ASC"f"
+                     teqne   1,#ASC"F"
+                     bne     error
+                     ldrb    1,[0],#1
+                     cmp     1,#32
+                     bgt     error
+                     ldr     0,claimed
+                     teq     0,#0
+                     ldmeqfd 13!,{2-12,pc}^
+                     mov     0,#&10
+                     adr     1,code
+                     mov     2,#0
+                     swi     "XOS_Release"
+                     mov     1,#0
+                     str     1,claimed
+                     ldmfd   13!,{2-12,pc}^
+                     
+.on                  ldrb    1,[0],#1
+                     cmp     1,#32
+                     bgt     error
+                     ldr     0,claimed
+                     teq     0,#1
+                     ldmeqfd 13!,{2-12,pc}^
+                     mov     0,#&10
+                     adr     1,code
+                     mov     2,#0
+                     swi     "XOS_Claim"
+                     mov     0,#1
+                     str     0,claimed
+.qitq                ldmfd   13!,{2-12,pc}^
+                     
+.error               adr     0,errorblks
+.reporterror         ldmfd   13!,{2-12,14}
+                     orrs    pc,r14,#&10000000
+
+.isclaim             ldr     0,claimed
+                     teq     0,#1
+                     adreq   0,messagey
+                     adrne   0,messagen
+                     swi     "XOS_Write0"
+                     swi     "XOS_NewLine"
+                     ldmfd   13!,{2-12,pc}^
+
+.code                stmfd   13!,{0-12,14}
+                     teq     0,#&B
+                     ldmnefd 13!,{0-12,pc}^
+                     teq     2,#9
+                     teqne   2,#10
+                     teqne   2,#&30
+                     teqne   2,#&3d
+                     ldmnefd 13!,{0-12,pc}^
+                     teq     1,#1
+                     b       key_pressed
+
+.key_pressed         ldr     0,buffa
+                     teq     1,#1
+                     beq     begger
+                     mov     1,#1
+                     str     1,buffa
+                     teq     2,#9
+                     beq     autofire
+                     teq     2,#10
+                     beq     invun
+                     
+                     mov     9,pc
+                     orr     8,9,#3                 ; bloody irq!
+                     teqp    8,#0
+                     movnv   0,0
+                     stmfd   13!,{2,14}
+                     mov     0,#202
+                     mov     1,#0
+                     mov     2,#255
+                     swi     "XOS_Byte"
+                     ldmfd   13!,{2,14}
+                     teqp    9,#0
+                     movnv   0,0
+                     
+                     and     1,1,#64
+                     teq     1,#64
+                     bne     begger
+                     teq     2,#&30
+                     beq     power
+                     
+.speed               ldr     1,miscw
+                     ldr     0,sword
+                     str     1,[0]
+                     ldr     0,sword2
+                     str     1,[0]
+                     b       begger
+                     
+.power               mov     1,#0
+                     ldr     0,pword
+                     strb    1,[0]
+                     ldr     0,pword2
+                     strb    1,[0]
+                     b       begger
+
+.invun               ldr     0,iword
+                     ldrb    1,[0]
+                     eor     1,1,#1
+                     strb    1,[0]
+                     ldr     0,iword2
+                     ldrb    1,[0]
+                     eor     1,1,#1
+                     strb    1,[0]
+                     b       begger
+
+.autofire            ldr     0,aword2
+                     ldr     1,[0]
+                     eor     1,1,#&F0000000
+                     str     1,[0]
+                     ldr     0,aword
+                     ldr     1,[0]
+                     eor     1,1,#&E0000000
+                     str     1,[0]
+                     
+.begger              mov     0,#&B
+                     mov     1,#1
+                     ldmfd   13!,{0-12,pc}^
+
+.aword               &&A364
+.iword               &&D290
+.iword2              &&D40C
+.sword               &(&8000+&52a4)
+.sword2              &(&8000+&5420)
+.pword               &(&8000+&52ac)
+.pword2              &(&8000+&5424)
+.miscw               &&E1A00000
+.aword2              &(&8000+&22ac)
+
+.buffa               &0
+.claimed             &0
+.messagey            :="Quarkcheat is on":=0:align
+.messagen            :="Quarkcheat is off":=0:align
+]:ENDPROC

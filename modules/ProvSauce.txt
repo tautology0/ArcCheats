@@ -1,0 +1,121 @@
+REM >Basic
+REM Created on Thu,26 Aug 1993
+REM by Arm Tool - by Riscy Developments, 1993
+
+ONERRORREPORT:PRINT" @ ";ERL:END
+DIM Code &1000
+FOR pass%=4 TO 6 STEP 2
+P%=0:O%=Code
+PROCcode(pass%)
+NEXT
+SYS "OS_File",10,":4.Programin.misc.cheats.ProvCheat",&FFA,,Code,O%
+END
+:
+DEFPROCcode(pass%)
+[OPT pass%
+                     &0
+                     &init
+                     &final
+                     &0
+                     &title
+                     &help
+                     &helptable
+                     &0
+                     &0
+.title               :="Provocator":=0
+.help                :="Provocator Cheat":=9:="1.00 (26 Sep 1993) © Dave Lodge":=0
+                     align
+.helptable           :="Cheat":=0
+                     align
+                     &0
+                     &0
+                     &0
+                     =helptext1
+                     &0
+
+.helptext1           :="The module allows you to do the following:":=13:=10
+                     ="F1 = Infinite Lives On":=13:=10
+                     ="F2 = Infinite Lives Off":=13:=10
+                     ="F3 = Best weapon":=13:=10
+                     ="F4 = Autofire On":=13:=10
+                     ="F5 = Autofire Off":=13:=10
+                     ="WARNING: Do NOT use this module outside of Provocator.":=13:=10:=13:=10
+                     ="If you know the cheat mode for this please send me the details...":=13:=10
+                     ="Also edit out the *RmClear in the !Run file":=0
+                     align
+                     
+.init                stmfd   13!,{0-3,14}
+                     mov     0,#&10
+                     adr     1,code
+                     mov     2,#0
+                     swi     "XOS_Claim"
+                     ldmfd   13!,{0-3,pc}^
+                     
+.final               stmfd   13!,{0-3,14}
+                     mov     0,#&10
+                     adr     1,code
+                     mov     2,#0
+                     swi     "XOS_Release"
+                     ldmfd   13!,{0-3,pc}^
+                     
+.code                teq     0,#&B
+                     teqeq   1,#1
+                     movnes  pc,14
+                     
+                     teq     2,#1
+                     beq     liveson
+                     teq     2,#2
+                     beq     livesoff
+                     teq     2,#3
+                     beq     weapon
+                     teq     2,#4
+                     beq     autoon
+                     teq     2,#5
+                     beq     autooff
+                     mov     pc,14
+                     
+.liveson             ldr     0,lword
+                     mov     1,#0
+                     strb    1,[0]
+                     b       begger
+
+.livesoff            ldr     0,lword
+                     mov     1,#1
+                     strb    1,[0]
+                     b       begger
+                     
+.weapon              ldr     0,wword
+                     ldr     1,wpword
+                     str     1,[0]
+                     ldr     0,wword2
+                     mov     1,#4
+                     str     1,[0]
+                     b       begger
+                     
+.autoon              ldr     0,aword
+                     ldr     1,apword
+                     str     1,[0],#4
+                     ldr     1,apword2
+                     str     1,[0]
+                     b       begger
+                     
+.autooff             ldr     0,aword
+                     ldr     1,apword3
+                     str     1,[0],#4
+                     ldr     1,apword4
+                     str     1,[0]
+                     
+.begger              mov     0,#&B
+                     mov     1,#1
+                     movs    pc,14
+                     
+.lword               &&12BB4
+.wword               &&15760
+.wword2              &&10054
+.wpword              &&E1A00000
+.aword               &&16814
+.apword              &&E3A020FF
+.apword2             &&E5CF20C4
+.apword3             &&E5DF30C8
+.apword4             &&E5CF20C4
+]:ENDPROC

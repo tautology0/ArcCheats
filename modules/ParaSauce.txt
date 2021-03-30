@@ -1,0 +1,104 @@
+REM >Basic
+REM Created on Thu,26 Aug 1993
+REM by Arm Tool - by Riscy Developments, 1993
+
+ONERRORREPORT:PRINT" @ ";ERL:END
+DIM Code &1000
+FOR pass%=4 TO 6 STEP 2
+P%=0:O%=Code
+PROCcode(pass%)
+NEXT
+SYS "OS_File",10,":4.Programin.misc.cheats.ParaCheat",&FFA,,Code,O%
+END
+:
+DEFPROCcode(pass%)
+[OPT pass%
+                     &0
+                     &init
+                     &final
+                     &0
+                     &title
+                     &help
+                     &helptable:&0
+                     &0
+.title               :="ParadroidCheat":=0
+.help                :="Paradroid Cheat":=9:="1.00 (26 Aug 1993) © Dave Lodge":=0
+                     align
+.helptable           :="Cheat":=0
+                     align
+                     &0
+                     &0
+                     &0
+                     =helptext1
+                     &0
+
+.helptext1           :="The module allows you to do the following:":=13:=10
+                     ="F6 = Finish current level":=13:=10
+                     ="F7 = Access all 7 levels":=13:=10
+                     ="F8 = Infinite lines Left":=13:=10
+                     ="F9 = Infinite lines Right":=13:=10
+                     ="WARNING: Do NOT use this module outside of Paradroid...":=0
+                     align
+                     
+.init                stmfd   13!,{0-3,14}
+                     mov     0,#&10
+                     adr     1,code
+                     mov     2,#0
+                     swi     "XOS_Claim"
+                     ldmfd   13!,{0-3,pc}^
+                     
+.final               stmfd   13!,{0-3,14}
+                     mov     0,#&10
+                     adr     1,code
+                     mov     2,#0
+                     swi     "XOS_Release"
+                     ldmfd   13!,{0-3,pc}^
+                     
+.code                teq     0,#&B
+                     teqeq   1,#1
+                     movnes  pc,14
+                     
+                     teq     2,#8
+                     beq     left
+                     teq     2,#9
+                     beq     right
+                     teq     2,#6
+                     beq     exit
+                     teq     2,#7
+                     beq     alllevels
+                     movnes  pc,14
+                     
+.left                ldr     0,rword
+                     mov     1,#0
+                     strb    1,[0]
+                     ldr     0,lword
+                     mov     1,#1
+                     strb    1,[0]
+                     b       begger
+
+.right               ldr     0,lword
+                     mov     1,#0
+                     strb    1,[0]
+                     ldr     0,rword
+                     mov     1,#1
+                     strb    1,[0]
+                     b       begger
+                     
+.exit                ldr     0,exitw
+                     mov     1,#1
+                     str     1,[0]
+                     b       begger
+                     
+.alllevels           mov     1,#6
+                     ldr     0,counter
+                     str     1,[0]
+                     
+.begger              mov     0,#&B
+                     mov     1,#1
+                     movs    pc,14
+                     
+.rword               &&C500
+.lword               &&C650
+.exitw               &&83624
+.counter             &&EE64
+]:ENDPROC

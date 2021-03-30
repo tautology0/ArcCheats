@@ -1,0 +1,80 @@
+; Zelanites cheat
+
+; Dave
+
+Type Module
+
+var $name="ZelaCheat"
+var $date="(07 Apr 94)"
+var $version="1.10"
+
+                &	0
+		&	init
+		&	term
+		&	0
+		&	title
+		&	help
+		&	hctable
+
+.title		=	name,0:align
+.help		=	name,9,version,32,date,0:align
+
+.hctable	=	"Cheat",0:align
+		&	0
+		&	0
+		&	0
+		&	helptext
+		&	0
+		&	0
+		
+.helptext	=	"The module allows you to disable the orbiting creature",13,10
+		=	"WARNING: This is a 'nasty' module - do NOT keep it running in your computer for too long before loading Zelanites...",0
+		align	
+
+.init		stmfd   13!,{0-3,14}
+		mov     0,#6
+		adr     1,code
+		mov     2,#0
+		swi     "XOS_CallEvery"
+		ldmfd   13!,{0-3,pc}^
+
+.term		stmfd 	13!,{0-3,14}
+		adr 	0,code
+		mov 	1,#0
+		swi	"XOS_RemoveTickerEvent"
+		ldmfd 	13!,{0-3,pc}^
+		
+.code		stmfd   13!,{0-2,8,9,14}
+		mov     9,pc
+		bic     8,9,#3
+		teqp    8,#3
+		movnv   0,0
+		stmfd   13!,{0-2,14}
+
+		ldr     0,addr
+		mov     1,0
+		swi     "XOS_ValidateAddress"
+		bvs     out
+		bcs     out
+		ldr     2,orbitcode
+		ldr     1,[0]
+		teq     1,2
+		bne     out
+		ldr     2,orbitcode2
+		str     2,[0]
+		ldr	0,addr2
+		mov	2,#0
+		strb	2,[0]
+		adr     0,code
+		mov     1,#0
+		swi     "XOS_RemoveTickerEvent"
+
+.out		ldmfd   13!,{0-2,14}
+		teqp    9,#0
+		movnv   0,0
+		ldmfd   13!,{0-2,8,9,pc}^
+
+.addr		&	&99EC
+.addr2		&	&AF2C
+.orbitcode	&	&0A000009
+.orbitcode2	&	&EA000009

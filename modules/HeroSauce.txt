@@ -1,0 +1,112 @@
+; Heroquest Cheat module
+; © Dave Lodge
+
+		&	0
+		&	init
+		&	final
+		&	0
+		&	title
+		&	help
+		&	helptable
+		&	0
+		&	0
+.title		=	"HeroQuest",0
+.help		=	"HeroQuest Cheat",9,"1.00 (27 Sep 1993) © Dave Lodge",0
+		align
+.helptable	=	"Cheat":=0
+		align
+		&	0
+		&	0
+		&	0
+		=	helptext1
+		&	0
+
+.helptext1	=	"The module allows you to do the following:",13,10
+		=	"F1 = Loads of Money",13,10
+		=	"F2 = Loads of Moves",13,10
+		=	"F3 = Loads of Health",13,10
+		=	"F4 = Loads of Luck",13,10
+		=	"F5 = Loads of Defence",13,10
+		=	"F6 = Loads of Attack",13,10
+		=	"WARNING: Do NOT use this module outside of HeroQuest",13,10
+		=	"Works only on the current character",0
+		align
+                     
+.init           stmfd	13!,{0-3,14}
+		mov  	0,#6
+		adr  	1,code
+		mov  	2,#0
+		swi	"XOS_CallEvery"
+		ldmfd	13!,{0-3,pc}^
+                     
+.final		stmfd	13!,{0-3,14}
+		adr    	0,code
+		mov    	1,#0
+		swi    	"XOS_RemoveTickerEvent"
+		ldmfd  	13!,{0-3,pc}^
+                     
+.code		stmfd  	13!,{0-2,14}
+		mov    	0,#&81
+		mvn    	1,#113
+		mov    	2,#&ff
+		swi    	"XOS_Byte"
+		teq    	2,#&ff
+		beq    	money
+		mvn    	1,#114
+		mov    	2,#&ff
+		swi    	"XOS_Byte"
+		teq     2,#&ff
+		beq     moves
+		mvn     1,#115
+		mov     2,#&ff
+		swi     "XOS_Byte"
+		teq     2,#&ff
+		beq     health
+		mvn     1,#20
+		mov     2,#&ff
+		swi     "XOS_Byte"
+		teq     2,#&ff
+		beq     luck
+		mvn     1,#116
+		mov     2,#&ff
+		swi     "XOS_Byte"
+		teq     2,#&ff
+		beq     defence
+		teq     2,#&ff
+		mvn     1,#117
+		mov     2,#&ff
+		swi     "XOS_Byte"
+		teq     2,#&ff
+		ldmnefd 13!,{0-2,pc}^
+		ldr     0,aword
+		b       cont
+.defence        ldr     0,dword
+.cont           mov     1,#10
+		str     1,[0]
+		ldmfd   13!,{0-2,pc}^
+                     
+.luck           mov     0,#&40         ; there must be a better way...
+		b       rest
+                     
+.health         mov     0,#&44
+		b       rest
+                     
+.moves          mov     0,#&48
+		b       rest
+                     
+.money          mov     0,#&4C
+                     
+.rest           ldr     1,cword
+		ldr     1,[1]
+		add     1,1,0
+		ldr     2,[1]
+		teq     0,#&4c
+		addeq   2,2,#4000
+		addne   2,2,#10
+		str     2,[1]
+		ldmfd   13!,{0-2,pc}^
+                     
+.mword          &	&40
+.cword          &	&302BC
+.aword          &	&3040C
+.dword          &	&30410

@@ -1,0 +1,61 @@
+; Skool Daze Cheat module for SkoolDaze under the Speculator
+
+; Press F1 to blank lines to 0
+
+; Dave
+
+Type Module
+
+var $Name=SkoolDaze
+var $Version=1.00
+var $Date=(07 Apr 94)
+
+		&  	0,InitCode,FinalCode,0,TitleString,HelpString,0,0
+.TitleString	=	Name,0
+.HelpString	=	Name,9,Version,32,Date,0:align
+
+.InitCode	stmfd	13!,{0-3,14}
+		adr	1,modname
+		mov	0,#&12
+		swi	XOS_Module
+		bvs	nomod
+		add	4,4,#&4100
+		str	4,base
+		mov	0,#16
+		adr	1,keyhandler
+		mov	2,#0
+		swi	XOS_Claim
+		ldmfd	13!,{0-3,pc}^
+
+.FinalCode	stmfd	13!,{0-3,14}
+		mov	0,#16
+		adr	1,keyhandler
+		mov	2,#0
+		swi	XOS_Release
+		ldmfd	13!,{0-3,15}^
+
+.nomod		ldmfd	13!,{0-3,14}
+		adr	0,error
+		orr	14,14,#&10000000
+		mov	pc,14
+
+.keyhandler	teq	0,#11
+		teqeq	1,#1
+		movnes	15,14
+		teq	2,#1
+		movnes	pc,14
+		ldr	0,addr1
+		ldr	1,base
+		add	0,0,1
+		mov	1,#0
+		strb	1,[0],#1
+		strb	1,[0]
+.notokay	mov	0,#11
+		mov	1,#1
+		movs	15,14
+
+.addr1		&	&40C6
+.base		&	0
+.modname	=	"Speculator",0:align		
+.error		&	0
+		=	"Speculator Module not present",0:align
