@@ -1,0 +1,69 @@
+<title>Lemmings 2 - saved game file format</title>
+<h1>Lemmings 2 - saved game file format</h1>
+
+<h2>Archimedes</h2>
+<h6>Do other machines have the same format?</h6>
+The file is divided into blocks of 10 - each block equates to 1 of the
+save positions. Each block is &1F6 bytes long and the resulting file is
+NOT word-aligned, though it is half-word aligned.<p>
+
+For each block:
+<pre>
+Offset  Size    Use
+0       20      The name of the position - terminated by a 0 or if it is
+                full.
+</pre>                
+
+then they are divided into 12x10 blocks each of 4 bytes, starting from
+offset &3A, each block is for that level of that game.<p>
+
+The format is:
+
+<pre>
+offset  Use
+------------
+0       NULL
+1       Number of Lemmings for this level.
+2       NULL
+3       Standard of success:    0 - haven't completed this.
+                                1 - 3rd step
+                                2 - 2nd step
+                                3 - 1st step
+The value for the first level is always 0
+</pre>
+
+These 12x10 words are placed by the following algorithm:
+<pre>
+base=(posno-1)*&1F6
+offset=base+20+(tribeno*40)+((levelno-1)*4)
+</pre>
+
+the tribeno's are:
+<pre>
+        Classic         0
+        Beach           1
+        Cave            2
+        Circus          3
+        Egyptian        4
+        Highland        5
+        Medieval        6
+        Outdoor         7
+        Polar           8
+        Shadow          9
+        Space           10
+        Sports          11
+</pre>
+
+eg the word for level 7 in the Polar tribe, on the second saved-game file is
+at offset:
+<pre>
+base  =(2-1)*&1F6
+      =&1F6
+offset=&1F6+20+(8*40)+((7-1)*4)
+      =&1F6+20+320+24
+      =&1F6+&16C
+      =&362  
+</pre>
+
+The final 2 bytes after al the level data (at offset &1F4) are a NULL
+followed by the current tribe number. The tribe number is same as above.<p>
