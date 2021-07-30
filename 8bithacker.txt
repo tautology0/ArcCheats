@@ -1,0 +1,263 @@
+; This is the source code for a Hacker external code utility
+; It provides a basic memory searcher and poker which has
+; a slight knowledge of 6502 code.
+
+; © Dave Lodge March 1994
+
+Type Utility
+
+		=	"Hacker-Code",10
+
+.start		stmdb	13!,{0-10,14}
+
+.menu           swi	XOS_NewLine
+		swi	XOS_WriteS
+		=	"8-Bit Hacker 1.10",10,13
+		=	"© Dave Lodge March 1994",10,13
+		=	10,10
+		=	"0 - Search",10,13
+		=	"1 - Alter",10,13
+		=	"2 - List bytes",10,13
+		=	"9 - Quit",10,13,0
+		align
+.inploop	swi	XOS_ReadC
+		ldmcsfd	13!,{0-10,pc}^
+		teq	0,#"0"
+		beq	searcher
+		teq	0,#"1"
+		beq	poker
+		teq	0,#"2"
+		beq	listbytes
+		teq	0,#"9"
+		ldmeqfd	13!,{0-10,pc}^
+		swi	256+7
+		b	inploop
+
+.searcher	bl 	search
+		b	menu
+
+.poker		bl 	poke		
+		b	menu
+
+.listbytes	bl	lbytes
+		b	menu
+
+.search		stmfd	13!,{0-10,14}
+		swi	XOS_NewLine
+		swi	XOS_WriteS
+		=	"Enter Number of Lives: ",0
+		align
+
+		adr	0,readbuffer
+		mov	1,#&ff
+		mov	2,#"0"
+		mov	3,#"9"
+		swi 	XOS_ReadLine
+		ldmcsia	13!,{0-10,pc}^
+		mov	0,#10
+		add	0,0,#1<<30
+		adr	1,readbuffer
+		swi	XOS_ReadUnsigned
+		ldmvsia	13!,{0-10,pc}^
+		and	2,2,#&ff
+		swi	XOS_WriteS
+		=	"Searching...",10,13,0
+		align
+		mov	0,#&8500
+		mov	1,#&8500
+		add	1,1,#&8000
+.lup		ldrb	3,[0],#1
+		teq	3,2
+		bleq	equal
+		swi 	XOS_ReadEscapeState
+		ldmcsia	13!,{0-10,pc}^
+		cmp	0,1
+		blt	lup
+		swi	XOS_WriteS
+		=	"Finished",13,10,0
+		align
+		swi	XOS_NewLine
+		ldmia	13!,{0-10,pc}^
+
+.equal		stmfd	13!,{0-10,14}
+		sub	0,0,#1
+		sub	0,0,#&8500
+		mov	5,#&8500
+		mov	6,1
+		and	8,0,#&ff
+		and	9,0,#&ff00
+		mov	9,9,asr#8
+		cmp	0,#&ff
+		blt	search_zero
+
+.search_nonz
+.nzlup		ldrb	7,[5],#1
+		teq	7,#&ce
+		bne	qit
+		ldrb	7,[5]
+		teq	7,8
+		bne	qit
+		ldrb	7,[5,#1]
+		teq	7,9
+		bne	qit
+		bl	plint
+.qit		cmp	5,6
+		blt	nzlup
+		ldmfd	13!,{0-10,pc}^
+
+.search_zero
+.alup		ldrb	7,[5],#1
+		teq	7,#&c6
+		bne	qot
+		ldrb	7,[5]
+		teq	7,8
+		bne	qot
+		bl	plint
+.qot		cmp	5,6
+		blt	alup
+		ldmfd	13!,{0-10,pc}^
+
+.plint		stmfd	13!,{0-3,14}
+		swi	XOS_WriteS
+		=	"Possible Lives Poke: ",0
+		align
+		add	0,0,#&8500
+		swi	256+38
+		adr	1,readbuffer
+		mov	2,#255
+		swi	XOS_ConvertHex4
+		swi	XOS_Write0
+		swi	XOS_NewLine
+		swi	XOS_WriteS
+		=	"Possible Infinite Lives Poke: ",0
+		align
+		swi	256+38
+		adr	1,readbuffer
+		mov	2,#255
+		mov	0,5
+		sub	0,0,#1
+		swi	XOS_ConvertHex4
+		swi	XOS_Write0
+		swi	XOS_NewLine
+		ldmfd	13!,{0-3,pc}^
+
+.readbuffer	%	255
+		align
+
+.poke		stmfd	13!,{0-10,14}
+		swi	XOS_NewLine
+		swi	XOS_WriteS
+		=	"Enter Address: ",0
+		align
+		
+		adr	0,readbuffer
+		mov	1,#&ff
+		mov	2,#"&"
+		mov	3,#"F"
+		swi	XOS_ReadLine
+		bcs	pfailed
+		mov	0,#10
+		adr	1,readbuffer
+		swi	XOS_ReadUnsigned
+		bvs	pfailed
+		cmp	2,#&8500
+		blt	pfailed
+		mov	3,#&8500
+		add	3,3,#&8000
+		cmp	2,3
+		bgt	pfailed
+		mov	1,#&ea
+		ldrb	0,[2]
+		adr	3,table
+		ldrb	0,[3,0]
+.noplup		strb	1,[2],#1
+                subs 	0,0,#1
+                bne 	noplup
+		ldmfd	13!,{0-10,pc}^
+
+.pfailed	swi 	XOS_WriteS
+		=	"Poke failed...",0
+		align
+		swi	XOS_NewLine
+		ldmfd	13!,{0-10,pc}^
+
+.lbytes		stmfd	13!,{0-10,14}
+		swi	XOS_NewLine
+		swi	XOS_WriteS
+		=	"Enter Address: ",0
+		align
+		
+		adr	0,readbuffer
+		mov	1,#&ff
+		mov	2,#"&"
+		mov	3,#"F"
+		swi	XOS_ReadLine
+		bcs	pfailed
+		mov	0,#10
+		adr	1,readbuffer
+		swi	XOS_ReadUnsigned
+		bvs	pfailed
+		cmp	2,#&8500
+		blt	pfailed
+		mov	3,#&8500
+		add	3,3,#&8000
+		cmp	2,3
+		bgt	pfailed
+		swi	XOS_NewLine
+		swi	XOS_WriteS
+		=	"The pokes for the address are:",10,13,0
+		align
+		mov	5,2
+		ldrb	0,[5]
+		adr	3,table
+		ldrb	4,[3,0]
+.findlup	swi	256+63
+		swi	256+38
+		adr	1,readbuffer
+		mov	2,#255
+		mov	0,5
+		swi	XOS_ConvertHex4
+		swi	XOS_Write0
+		swi	XOS_WriteS
+		=	"=&EA"		
+		align
+		swi	XOS_NewLine
+		swi	XOS_NewLine
+		add	5,5,#1
+		subs 	4,4,#1
+		bne	findlup
+		ldmfd	13!,{0-10,pc}^
+
+.table		=1,2,1,1,1,2,2,1 ;7	; argh!!!!
+		=1,2,1,1,1,3,3,1 ;f
+		=2,2,1,1,1,2,2,1 ;17
+		=1,3,1,1,1,3,3,1 ;1f
+		=3,2,1,1,2,2,2,1 ;27
+		=1,3,1,1,3,3,3,1 ;2f
+		=2,2,1,1,1,2,2,1 ;37
+		=1,3,1,1,1,3,3,1 ;3f
+		=1,2,1,1,1,2,2,1 ;47
+		=1,3,1,1,3,3,3,1 ;4f
+		=2,2,1,1,1,2,2,1 ;57
+		=1,3,1,1,1,3,3,1 ;5f
+		=1,2,1,1,1,2,2,1 ;67
+		=1,3,1,1,2,3,3,1 ;6f
+		=2,2,1,1,1,2,2,1 ;77
+		=1,3,1,1,1,3,3,1 ;7f
+		=1,2,1,1,2,2,2,1 ;87
+		=1,1,1,1,3,3,3,1 ;8f
+		=1,2,1,1,2,2,2,1 ;97
+		=1,3,1,1,1,3,1,1 ;9f
+		=3,2,3,1,2,2,2,1 ;a7
+		=1,3,1,1,3,3,3,1 ;af
+		=2,2,1,1,2,2,2,1 ;b7
+		=1,3,1,1,3,3,3,1 ;bf
+		=3,2,1,1,2,2,2,1 ;c7
+		=1,3,1,1,3,3,3,1 ;cf
+		=2,2,1,1,1,2,2,1 ;d7
+		=1,3,1,1,1,3,3,1 ;df
+		=3,2,1,1,2,2,2,1 ;e7
+		=1,3,1,1,3,3,3,1 ;ef
+		=2,2,1,1,1,2,2,1 ;f7
+		=1,3,1,1,1,3,3,1 ;ff 
+		

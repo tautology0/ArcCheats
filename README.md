@@ -12,3 +12,6 @@ The tokenised text versions of BBC V Basic cheat programs.
 
 # *.mod
 Some game cheat modules I wrote; these are RISC OS modules and will only run under RISC OS.
+
+# 8bithacker.txt
+The source code for a !Hacker plugin that would automatically search for possible cheats for games running in !65Host.
